@@ -1,0 +1,7 @@
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const AUTH_FAIL = 'AUTH_FAIL';
+export const AUTH_LOGOUT = 'AUTH_LOGOUT';
+
+export const FETCH_FEEDS_START = 'FETCH_FEEDS_START';
+export const FETCH_FEEDS_COMPLETED = 'FETCH_FEEDS_COMPLETED';
+export const REFRESH_FEEDS = "REFRESH_FEEDS";

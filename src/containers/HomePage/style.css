@@ -1,0 +1,10 @@
+.feeds {
+    justify-content: center;
+    cursor: pointer;
+}
+
+.filter-name {
+    display: block;
+    text-align: left;
+    margin: 10px 40px;
+}
