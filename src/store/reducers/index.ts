@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import authReducer from './auth';
-import feedReducer from './feeds';
+import authReducer from './loginReducer';
+import feedReducer from './feedReducer';
 
 const rootReducer = combineReducers({
     auth: authReducer,

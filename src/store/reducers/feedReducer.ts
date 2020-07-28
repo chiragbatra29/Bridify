@@ -1,6 +1,7 @@
 import * as actions from '../actions/actionTypes';
 
-import {updateObject} from "../../utility/utility";
+import { updateObject } from "../../utility/utility";
+import { stat } from 'fs';
 
 interface InitialFeedState {
     feeds: Array<any>;
@@ -20,11 +21,9 @@ const fetchFeedsSuccess = (state: InitialFeedState, action: any) => {
 };
 
 
-const refreshFeeds = (state: InitialFeedState, action: any) => {
-    return updateObject(state, {
-        feeds: action.feeds
-    });
-};
+const refreshFeeds = (state: InitialFeedState, action: any) =>  Object.assign({}, state, {
+    feeds: [...state.feeds,  ...action.feeds]
+  })
 
 const fetchFeedsStart = (state: InitialFeedState, action: any) => {
     return updateObject(state, {
